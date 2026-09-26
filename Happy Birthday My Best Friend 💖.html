@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/IT%20LAB-1/Desktop/nandhu/birthday%20wishes.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Best Friend 💖</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background */
+.container::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+    top: -250px;
+    left: -200px;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Heading */
+h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    text-shadow: 0 0 15px #fff, 0 0 30px #ff1493;
+    animation: glow 2s infinite alternate;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+        text-shadow: 0 0 10px white, 0 0 20px #ff1493;
+    }
+    to {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px white, 0 0 40px #ff1493;
+    }
+}
+
+.subtitle {
+    font-size: 25px;
+    margin: 15px 0 30px;
+    animation: fadeIn 2s ease;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heart */
+.big-heart {
+    font-size: 90px;
+    animation: heartbeat 1.2s infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.15); }
+}
+
+/* Message card */
+.message {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.message h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.message p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Cake */
+.cake-area {
+    margin: 40px auto;
+    position: relative;
+    z-index: 3;
+}
+
+.cake {
+    width: 220px;
+    height: 100px;
+    background: linear-gradient(#ffb6c1, #ff69b4);
+    border-radius: 15px 15px 25px 25px;
+    margin: 70px auto 0;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+
+.cake::before {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 35px;
+    background: #fff0f5;
+    border-radius: 50%;
+    top: -15px;
+    left: -5px;
+}
+
+.cake::after {
+    content: "♥  ♥  ♥";
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    bottom: 25px;
+    left: 45px;
+}
+
+/* Candle */
+.candle {
+    width: 15px;
+    height: 65px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 7px,
+        #ff1493 7px,
+        #ff1493 14px
+    );
+    position: absolute;
+    top: -65px;
+    left: 102px;
+    border-radius: 5px;
+}
+
+.flame {
+    width: 25px;
+    height: 35px;
+    background: radial-gradient(circle at 50% 70%, #fff 5%, #ffff00 20%, #ff9800 55%, #ff4500 80%);
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: -38px;
+    left: -5px;
+    animation: flame 0.5s infinite alternate;
+}
+
+@keyframes flame {
+    from {
+        transform: scale(1) rotate(-4deg);
+    }
+    to {
+        transform: scale(1.15) rotate(4deg);
+    }
+}
+
+/* Quotes */
+.quotes {
+    max-width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.quote {
+    padding: 25px;
+    background: rgba(255,255,255,.2);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,.4);
+    transition: .4s;
+}
+
+.quote:hover {
+    transform: translateY(-10px) rotate(2deg);
+    background: rgba(255,255,255,.35);
+}
+
+.quote p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/* Button */
+button {
+    border: none;
+    background: #ff1493;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255,20,147,.5);
+    transition: .3s;
+    position: relative;
+    z-index: 5;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ff007f;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -50px;
+    font-size: 25px;
+    animation: floatHeart linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Balloons */
+.balloon {
+    position: fixed;
+    bottom: -150px;
+    width: 55px;
+    height: 70px;
+    border-radius: 50%;
+    animation: balloon 10s linear infinite;
+    z-index: 1;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: white;
+    left: 50%;
+    top: 68px;
+}
+
+@keyframes balloon {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-120vh);
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Mobile */
+@media(max-width:600px) {
+    .message {
+        padding: 20px;
+    }
+
+    .message p {
+        font-size: 17px;
+    }
+
+    .cake {
+        transform: scale(.85);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="big-heart">💖</div>
+
+    <h1>Happy Birthday! 🎂</h1>
+
+    <div class="subtitle">
+        To My Forever Best Friend 👑✨
+    </div>
+
+    <div class="message">
+
+        <h2>🌸 You Are My Lifetime Special Person 🌸</h2>
+
+        <p>
+            Happy Birthday to the most amazing best friend! 💕
+            You are not just my best friend, you are a beautiful part
+            of my life that I will always treasure.
+            <br><br>
+            Through every laugh, every crazy moment, every secret,
+            every tear and every adventure — I am so lucky to have you.
+            🥹💖
+            <br><br>
+            May your life be filled with endless happiness,
+            beautiful memories, success and lots of love.
+            🎀✨
+            <br><br>
+            <b>You will always be my lifetime special best friend! ❤️</b>
+        </p>
+
+    </div>
+
+    <!-- Birthday Cake -->
+    <div class="cake-area">
+
+        <h2>🎂 Make a Wish! 🎂</h2>
+
+        <div class="cake">
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Best Friend Quotes -->
+    <h2 style="font-size:35px; margin-top:60px;">
+        💕 Best Friend Quotes 💕
+    </h2>
+
+    <div class="quotes">
+
+        <div class="quote">
+            <p>
+                "A best friend is someone who makes your
+                good times better and your hard times easier."
+            </p>
+            <span>🌷</span>
+        </div>
+
+        <div class="quote">
+            <p>
+                "Life is better with a best friend who understands
+                your madness."
+            </p>
+            <span>😂💖</span>
+        </div>
+
+        <div class="quote">
+            <p>
+                "Some friendships are written in the stars,
+                and ours is one of them."
+            </p>
+            <span>🌟</span>
+        </div>
+
+        <div class="quote">
+            <p>
+                "You are not just my best friend.
+                You are my forever person."
+            </p>
+            <span>👑❤️</span>
+        </div>
+
+    </div>
+
+    <button onclick="celebrate()">
+        🎉 Click for a Birthday Surprise 🎉
+    </button>
+
+    <footer>
+        Made with endless love for my lifetime best friend 💖
+        <br>
+        🎀 Happy Birthday! 🎀
+    </footer>
+
+</div>
+
+
+<script>
+
+/* Floating hearts */
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["❤️","💖","💕","💗","💓","💞","💘","🌸","✨"];
+
+    heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    heart.style.fontSize =
+        (20 + Math.random() * 30) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9000);
+}
+
+setInterval(createHeart, 400);
+
+
+/* Balloons */
+
+const colors = [
+    "#ff1493",
+    "#ff69b4",
+    "#ff4500",
+    "#8a2be2",
+    "#00bfff",
+    "#ffd700"
+];
+
+for(let i = 0; i < 12; i++) {
+
+    const balloon = document.createElement("div");
+
+    balloon.className = "balloon";
+
+    balloon.style.left =
+        Math.random() * 100 + "vw";
+
+    balloon.style.background =
+        colors[Math.floor(Math.random() * colors.length)];
+
+    balloon.style.animationDuration =
+        (8 + Math.random() * 8) + "s";
+
+    balloon.style.animationDelay =
+        Math.random() * 8 + "s";
+
+    document.body.appendChild(balloon);
+}
+
+
+/* Surprise button */
+
+function celebrate() {
+
+    for(let i = 0; i < 40; i++) {
+        setTimeout(createHeart, i * 60);
+    }
+
+    alert(
+        "🎉 HAPPY BIRTHDAY! 🎂💖\n\n" +
+        "You are my lifetime special best friend! 👑\n\n" +
+        "May all your dreams come true! ✨💕"
+    );
+}
+
+</script><div class="balloon" style="left: 95.7761vw; background: rgb(255, 105, 180); animation-duration: 9.38485s; animation-delay: 0.3536s;"></div><div class="balloon" style="left: 10.1048vw; background: rgb(255, 20, 147); animation-duration: 9.42132s; animation-delay: 4.94636s;"></div><div class="balloon" style="left: 14.1976vw; background: rgb(255, 105, 180); animation-duration: 8.29353s; animation-delay: 4.01735s;"></div><div class="balloon" style="left: 20.1938vw; background: rgb(255, 69, 0); animation-duration: 12.2594s; animation-delay: 2.02798s;"></div><div class="balloon" style="left: 39.9593vw; background: rgb(255, 105, 180); animation-duration: 11.6918s; animation-delay: 6.47184s;"></div><div class="balloon" style="left: 62.6626vw; background: rgb(255, 215, 0); animation-duration: 14.3306s; animation-delay: 2.96722s;"></div><div class="balloon" style="left: 43.3537vw; background: rgb(255, 20, 147); animation-duration: 14.3237s; animation-delay: 6.65186s;"></div><div class="balloon" style="left: 37.3633vw; background: rgb(0, 191, 255); animation-duration: 15.6129s; animation-delay: 1.43931s;"></div><div class="balloon" style="left: 89.5744vw; background: rgb(255, 69, 0); animation-duration: 8.47387s; animation-delay: 7.45314s;"></div><div class="balloon" style="left: 32.7534vw; background: rgb(255, 20, 147); animation-duration: 14.2649s; animation-delay: 7.07721s;"></div><div class="balloon" style="left: 17.682vw; background: rgb(0, 191, 255); animation-duration: 10.8101s; animation-delay: 3.8821s;"></div><div class="balloon" style="left: 89.6189vw; background: rgb(255, 69, 0); animation-duration: 8.61424s; animation-delay: 2.11237s;"></div>
+
+
+
+<div class="heart" style="left: 41.7071vw; animation-duration: 5.33228s; font-size: 25.7205px;">✨</div><div class="heart" style="left: 69.074vw; animation-duration: 8.89531s; font-size: 33.1311px;">✨</div><div class="heart" style="left: 71.8862vw; animation-duration: 4.06328s; font-size: 48.1308px;">💕</div><div class="heart" style="left: 72.6171vw; animation-duration: 6.41282s; font-size: 26.5645px;">🌸</div><div class="heart" style="left: 2.65134vw; animation-duration: 5.83162s; font-size: 28.3946px;">🌸</div><div class="heart" style="left: 13.1601vw; animation-duration: 4.0163s; font-size: 33.9103px;">💕</div><div class="heart" style="left: 31.919vw; animation-duration: 7.46997s; font-size: 27.8591px;">💕</div><div class="heart" style="left: 31.7433vw; animation-duration: 6.89009s; font-size: 48.5985px;">💓</div><div class="heart" style="left: 34.3942vw; animation-duration: 5.57148s; font-size: 38.2795px;">💕</div><div class="heart" style="left: 20.663vw; animation-duration: 5.3248s; font-size: 37.8201px;">💕</div><div class="heart" style="left: 4.59297vw; animation-duration: 8.52665s; font-size: 27.6115px;">💓</div><div class="heart" style="left: 95.4012vw; animation-duration: 5.30176s; font-size: 35.9058px;">💘</div><div class="heart" style="left: 92.6694vw; animation-duration: 4.39536s; font-size: 41.2709px;">🌸</div><div class="heart" style="left: 55.2233vw; animation-duration: 4.39156s; font-size: 25.6419px;">💘</div><div class="heart" style="left: 0.465052vw; animation-duration: 6.65566s; font-size: 46.5406px;">💕</div><div class="heart" style="left: 38.8084vw; animation-duration: 8.57467s; font-size: 29.5786px;">💓</div><div class="heart" style="left: 76.691vw; animation-duration: 4.2086s; font-size: 26.624px;">💓</div><div class="heart" style="left: 12.0123vw; animation-duration: 5.48966s; font-size: 45.4316px;">💘</div><div class="heart" style="left: 70.5609vw; animation-duration: 5.83804s; font-size: 27.0237px;">✨</div><div class="heart" style="left: 89.8103vw; animation-duration: 6.73508s; font-size: 38.7081px;">💓</div><div class="heart" style="left: 92.5312vw; animation-duration: 6.359s; font-size: 26.3965px;">💞</div><div class="heart" style="left: 81.0574vw; animation-duration: 5.59248s; font-size: 46.7249px;">💓</div><div class="heart" style="left: 29.0855vw; animation-duration: 7.69739s; font-size: 26.2412px;">💕</div></body></html>
